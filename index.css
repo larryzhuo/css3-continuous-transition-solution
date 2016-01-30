@@ -6,12 +6,15 @@ html, body{
 body{
     background-color:#bc1a2d;
     position:relative;
+    position:fixed; 
+    width:100%;
 }
 .animate{
 }
 
 /******* logo ********/
 .logo{
+    z-index: 20px;
     background:url('img/logo.png') no-repeat center center;
     background-size:150px auto;
     background-color: white;
@@ -29,9 +32,16 @@ body{
 }
 
 .page{
-    top: 60px;
+    left:0;
+    /*top: 60px;*/
+    top:0;
     position: absolute;
     width: 100%;
+    height:100%;
+    z-index: 0;
+}
+.page.active{
+    z-index:10;
 }
 /********* page1 **********/
 .page1{
@@ -39,7 +49,7 @@ body{
 .circle-icon{
     position: absolute;
     width: 200px;
-    top: 5%;
+    top: 15%;
     left: 50%;
     margin-left: -100px;
     -webkit-transform: translateY(50px);
@@ -100,7 +110,7 @@ body{
     background-size: 100% auto;
     width: 250px;
     height: 100px;
-    top: 35%;
+    top: 38%;
     left: 50%;
     margin-left: -125px;
     position: absolute;
@@ -300,7 +310,7 @@ body{
     height: 128px;
     left: 50%;
     margin-left: -120px;
-    top: 0;
+    top: 12%;
     background: url('img/nrjh.png') no-repeat center center;
     background-size: 100% auto;
     opacity: 0;
@@ -320,7 +330,7 @@ body{
     position: absolute;
     opacity: 0;
     left: 50%;
-    top: 130px;
+    top: 30%;
     width: 45px;
     height: 45px;
     margin-left: -22.5px;
@@ -345,7 +355,7 @@ body{
     height: 200px;
     left: 50%;
     margin-left: -135px;
-    top: 200px;
+    top: 40%;
     background: url('img/page-2-words.png') no-repeat center bottom;
     background-size: 100% auto;
     -webkit-transition: all .5s ease;
@@ -402,7 +412,7 @@ body.zoom-out{
 }
 .p3-title{
     position: absolute;
-    top: 5%;
+    top: 15%;
     width: 250px;
     height: 40px;
     left: 50%;
@@ -427,7 +437,7 @@ body.zoom-out{
     -webkit-perspective: 500px;
     position: absolute;
     width: 200px;
-    top: 10%;
+    top: 20%;
     padding: 0;
     left: 50%;
     margin-left: -100px;
@@ -555,7 +565,7 @@ body.zoom-out{
     background-size: 100% auto;
     background-position: center 0;
     position: absolute;
-    top: 5%;
+    top: 12%;
     left: 50%;
     margin-left: -100px;
     opacity: 0;
@@ -653,7 +663,7 @@ body.zoom-out{
     position: absolute;
     left: 50%;
     margin-left: -125px;
-    top: 68%;
+    top: 65%;
     opacity: 0;
 }
 .query-btn.on{
@@ -666,7 +676,7 @@ body.zoom-out{
     background-size: 100% auto;
     background-position: left -250px;
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     margin-left: -75px;
     opacity: 0;
