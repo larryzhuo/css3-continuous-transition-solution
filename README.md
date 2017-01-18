@@ -1,4 +1,4 @@
-# css3-transition-example
+# css3-continuous-transition-solution
 There is a solution to resolve that play css3 transition animation continuously.
 
 Css3 provide two ways to make animation: transition and key-frames. we always use transition.but how can we make a continuous transition animation easily. I create a method like this:
